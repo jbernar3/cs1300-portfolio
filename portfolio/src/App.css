@@ -1,0 +1,955 @@
+@import url('https://fonts.googleapis.com/css?family=Alata');
+
+.App {
+  display: flex;
+  background-color: #edd3fb;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1 {
+  font-family: Alata;
+  font-size: 1.7rem;
+  margin-left: 2vw;
+}
+
+h1:hover {
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+h2 {
+  font-family: Alata;
+  font-size: 3rem;
+  width: 70vw;
+  margin-top: 6vh;
+  margin-left: 9vw;
+}
+
+.Animated-text {
+  margin-left: 9vw;
+}
+
+.Cardsrow-container {
+  display: flex;
+  flex-direction: row;
+  width: 85vw;
+  height: 21vw;
+  justify-content: space-evenly;
+  align-self: center;
+}
+
+.Card-container {
+  display: flex;
+  flex-direction: column;
+  width: 19vw;
+  height: 19vw;
+  box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.Card-container:hover {
+  box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.1);
+  /* width: 20vw;
+  height: 20vw;
+  margin-top: -.5vw; */
+}
+
+.Card-mento-logo {
+  background-image: url("images/mento-logo.png");
+  display: flex;
+  width: 12vw;
+  height: 12vw;
+  background-size: 12vw;
+  cursor: pointer;
+}
+
+.Card-cf-logo {
+  background-image: url("images/cf-logo.png");
+  display: flex;
+  width: 14vw;
+  height: 7.4vw;
+  background-size: 14vw;
+  cursor: pointer;
+}
+
+.Card-nftscore-logo {
+  background-image: url("images/nftscoring_logo.png");
+  display: flex;
+  width: 12vw;
+  height: 12vw;
+  background-size: 12vw;
+}
+
+.Card-emojis {
+  font-size: 5vw;
+}
+
+.Card-text {
+  font-family: Alata;
+  width: 75%;
+  font-size: 1.5rem;
+}
+
+/* CF PAGE */
+.Cf-container {
+  display: flex;
+  flex-direction: column;
+  background-color: 'white';
+  min-width: 100vw;
+  min-height: 100vh;
+  padding-bottom: 5vh;
+}
+
+.Cf-header {
+  background-image: url("images/cf-logo.png");
+  display: flex;
+  width: 18vw;
+  height: 9vw;
+  background-size: 18vw;
+  margin-left: 8vw;
+  margin-bottom: 0;
+}
+
+.Cf-descriptionbox {
+  background-color: #002366;
+  width: 77vw;
+  align-self: center;
+  border-radius: 8px;
+  font-family: Alata;
+  color: white;
+  padding: 2vw;
+  font-size: 1.2rem;
+  margin-top: 2vw;
+}
+
+h3 {
+  margin-left: 9vw;
+  font-size: 1.7rem;
+}
+
+.Cf-subtext {
+  font-size: 1.3rem;
+  font-weight: 500;
+  width: 82vw;
+  align-self: center;
+}
+
+.Cf-oldpage-container {
+  background-color: #002366;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 77vw;
+  padding: 3vw;
+  border-radius: 8px;
+  align-self: center;
+  margin-top: 3vh;
+}
+
+.Cf-oldpage-img {
+  background-image: url("images/old_cfhomepage.png");
+  display: flex;
+  width: 55vw;
+  height: 31vw;
+  background-size: 55vw;
+  background-repeat: no-repeat;
+  border-style: solid;
+  border-bottom-width: .5vw;
+  border-color: red;
+}
+
+.Cf-oldpage-subtext {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: Alata;
+  font-size: 1.5rem;
+  width: 18vw;
+  margin-left: 2vw;
+}
+
+.Cf-oldpage-link {
+  display: flex;
+  flex-direction: column;
+  background-color: #ED2939;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  align-items: center;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.Cf-oldpage-link:hover {
+  background-color: #BC101F;
+}
+
+.subsection_title {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.subsection_list {
+  width: 85%;
+  margin-right: 5%;
+}
+
+.Cf-problems-card {
+  background-color: white;
+  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.4);
+  border-radius: 8px;
+  font-family: 'Alata';
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.Cf-desktop-lofi {
+  background-image: url("images/cf-lofi-desktop.jpg");
+  display: flex;
+  width: 60vw;
+  height: 44vw;
+  background-size: 60vw;
+  background-repeat: no-repeat;
+  border-style: solid;
+  border-width: 3px;
+  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.4);
+  border-color: #002366;
+  padding: 20px;
+  align-self: center;
+  margin-top: 3vh;
+  border-radius: 6px;
+}
+
+.Cf-tablet-lofi {
+  background-image: url("images/cf-lofi-tablet.jpg");
+  display: flex;
+  width: 60vw;
+  height: 47vw;
+  background-size: 60vw;
+  background-repeat: no-repeat;
+  border-style: solid;
+  border-width: 3px;
+  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.4);
+  border-color: #002366;
+  padding: 20px;
+  align-self: center;
+  margin-top: 3vh;
+  border-radius: 4px;
+}
+
+.Cf-mobile-lofi {
+  background-image: url("images/cf-lofi-mobile.jpg");
+  display: flex;
+  width: 60vw;
+  height: 53vw;
+  background-size: 60vw;
+  background-repeat: no-repeat;
+  border-style: solid;
+  border-width: 3px;
+  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.4);
+  border-color: #002366;
+  padding: 20px;
+  align-self: center;
+  margin-top: 3vh;
+  border-radius: 4px;
+}
+
+.Cf-style-guide {
+  background-image: url("images/cf-style-guide.png");
+  display: flex;
+  width: 60vw;
+  height: 38vw;
+  background-size: 60vw;
+  background-repeat: no-repeat;
+  border-style: solid;
+  border-width: 3px;
+  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.4);
+  border-color: #002366;
+  padding: 20px;
+  align-self: center;
+  margin-top: 3vh;
+  border-radius: 4px;
+}
+
+.Cf-hifi {
+  display: flex;
+  width: 88vw;
+  height: 40.5vw;
+  background-size: 88vw;
+  background-repeat: no-repeat;
+  border-style: solid;
+  border-width: 3px;
+  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.4);
+  border-color: #002366;
+  align-self: center;
+  margin-top: 3vh;
+  border-radius: 4px;
+}
+
+.Cf-hifi-desktop {
+  background-image: url("images/cf-hifi-desktop.png");
+}
+
+.Cf-hifi-tablet {
+  background-image: url("images/cf-hifi-tablet.png");
+  height: 51vw;
+}
+
+.Cf-hifi-mobile {
+  background-image: url("images/cf-hifi-mobile.png");
+  height: 42vw;
+}
+
+.Cf-bottom-links {
+  font-family: Alata;
+  font-weight: 600;
+  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.4);
+}
+
+/*  MENTO PAGE */
+
+.Mento-container {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  min-width: 100vw;
+  min-height: 100vh;
+  padding-bottom: 5vh;
+}
+
+.Mento-header {
+  background-image: url("images/mento-header.png");
+  display: flex;
+  width: 15vw;
+  height: 10vw;
+  background-size: 15vw;
+  margin-left: 8vw;
+  margin-bottom: 0;
+}
+
+.Mento-descriptionbox {
+  background-color: #280D45;
+  width: 77vw;
+  align-self: center;
+  border-radius: 8px;
+  font-family: Alata;
+  color: white;
+  padding: 2vw;
+  font-size: 1.2rem;
+}
+
+.Mento-mvp-ideas {
+  background-image: url("images/Mento-mvp-ideas.png");
+  display: flex;
+  width: 88vw;
+  height: 53vw;
+  background-size: 88vw;
+  background-repeat: no-repeat;
+  border-style: solid;
+  border-width: 3px;
+  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.4);
+  border-color: #002366;
+  align-self: center;
+  margin-top: 3vh;
+  border-radius: 8px;
+}
+
+.Mento-figma-sketches {
+  background-image: url("images/mento-figma-sketches.png");
+  display: flex;
+  width: 88vw;
+  height: 36vw;
+  background-size: 88vw;
+  background-repeat: no-repeat;
+  border-style: solid;
+  border-width: 3px;
+  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.4);
+  border-color: #002366;
+  align-self: center;
+  margin-top: 3vh;
+  border-radius: 8px;
+}
+
+.Mento-colors {
+  background-image: url("images/mento-colors.png");
+  display: flex;
+  width: 28vw;
+  height: 28vw;
+  background-size: 28vw;
+  background-repeat: no-repeat;
+  border-style: solid;
+  border-width: 3px;
+  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.4);
+  border-color: #002366;
+  align-self: center;
+  margin-top: 3vh;
+  border-radius: 8px;
+}
+
+.Mento-logo-variations {
+  background-image: url("images/mento-logo-variations.png");
+  display: flex;
+  width: 50vw;
+  height: 28.3vw;
+  background-size: 50vw;
+  background-repeat: no-repeat;
+  border-style: solid;
+  border-width: 3px;
+  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.4);
+  border-color: #002366;
+  align-self: center;
+  margin-top: 3vh;
+  border-radius: 8px;
+}
+
+.Mento-logo-picked-container {
+  display: flex;
+  flex-direction: row;
+  width: 60vw;
+  height: 22vw;
+  justify-content: space-between;
+  align-self: center;
+  background-color: black;
+  box-shadow: 5px 5px 10px 2px rgba(255, 255, 255, 0.331);
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(255, 255, 255, 0.379);
+  overflow: hidden;
+  margin-top: 5vh;
+}
+
+.Mento-logo-picked {
+  background-image: url("images/mento-logo.png");
+  display: flex;
+  width: 22vw;
+  height: 22vw;
+  background-position-y: center;
+  background-position-x: center;
+  background-size: 16vw;
+  background-repeat: no-repeat;
+  align-self: center;
+  margin-top: 3vh;
+  border-radius: 8px;
+}
+
+.Mento-logo-picked-notes {
+  display: flex;
+  width: 35vw;
+  height: 22vw;
+  background-color: #280D45;
+  font-family: Alata;
+  color: white;
+  font-size: 1.5rem;
+  padding: 1.5vw;
+  flex-direction: column;
+}
+
+.Mento-screen-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 75vw;
+  height: 39vw;
+  
+  border-radius: 15px;
+  align-self: center;
+}
+
+.Mento-screen-card-description {
+  display: flex;
+  width: 46vw;
+  height: 33vw;
+  background-color: #280D45;
+  border-radius: 15px;
+  font-family: Alata;
+  color: white;
+  padding: 3vw;
+  font-size: 1.2rem;
+}
+
+.Mento-screen-cards-container {
+  display: flex;
+  flex-direction: row;
+  width: 86vw;
+  justify-content: space-between;
+  align-self: center;
+  margin-top: 5vh;
+  align-items: center;
+}
+
+.Mento-screen-cards-arrow {
+  display: flex;
+  width: 3vw;
+  height: 3vw;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10000000000000px;
+  background-color: #00b38c;
+  cursor: pointer;
+  color: white;
+  font-weight: 800;
+  font-size: 1.4rem;
+}
+
+.Mento-screen-cards-arrow:hover {
+  background-color: #00b38c85;
+}
+
+.Mento-screen-card-num {
+  display: flex;
+  width: 5vw;
+  height: 2vw;
+  background-color: #2598da;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  font-family: Alata;
+  font-weight: 800;
+  border-radius: 8px;
+  margin-top: 2vh;
+
+}
+
+.Mento-screen {
+  width: 18vw;
+  height: 39vw;
+  border-color: #f8f8f8;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+.padded-li {
+  margin-bottom: 10px;
+}
+
+.not-selectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.Mento-download-button {
+  font-family: Alata;
+  color: black;
+  font-weight: 600;
+  font-size: 1.2rem;
+  align-self: center;
+  background-color: #00b38c;
+  padding: 1.5vw;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 4vh;
+}
+
+.Mento-download-button:hover {
+  background-color: #008367;
+}
+
+/* NFT SCORING STUFF */
+
+.Scoring-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f0f0;
+  min-width: 100vw;
+  min-height: 100vh;
+  padding-bottom: 5vh;
+}
+
+.Scoring-header {
+  display: flex;
+  margin-left: 9vw;
+  margin-bottom: 0;
+  margin-top: 3vh;
+  background-color: #dbfb04;
+  display: flex;
+  flex-direction: column;
+  font-size: 3rem;
+  font-weight: 800;
+  width: 17rem;
+  padding: 1.8vw;
+  border-radius: 1vw;
+  border-style: solid;
+  border-width: 4px;
+  border-color: black;
+}
+
+.Scoring-descriptionbox {
+  background-color: #353535;
+  width: 77vw;
+  align-self: center;
+  border-radius: 8px;
+  font-family: Alata;
+  color: white;
+  padding: 2vw;
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+.Scoring-sketch-slideshow-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+  margin-top: 5vh;
+  width: 77vw;
+  height: 45vw;
+  align-items: center;
+  background-color: #dddddd;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  border-radius: 2vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+}
+
+.Scoring-arrow-div {
+  background-color: #dbfb04;
+  display: flex;
+  font-size: 1.8rem;
+  font-weight: 800;
+  border-radius: 100000000px;
+  width: 3rem;
+  height: 3rem;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-width: 3px;
+  border-style: solid;
+  border-color: black;
+}
+
+.Scoring-arrow-div:hover {
+  background-color: #98af00;
+}
+
+.Scoring-sketch0 {
+  background-image: url("images/scoring-sketch1.png");
+  display: flex;
+  width: 50vw;
+  height: 45vw;
+  background-size: 50vw;
+  background-repeat: no-repeat;
+  border-style: solid;
+  border-width: 3px;
+  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.4);
+  border-color: #002366;
+  align-self: center;
+  border-radius: 8px;
+}
+
+.Scoring-sketch1 {
+  background-image: url("images/scoring-sketch2.png");
+  display: flex;
+  width: 55vw;
+  height: 28vw;
+  background-size: 55vw;
+  background-repeat: no-repeat;
+  border-style: solid;
+  border-width: 3px;
+  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.4);
+  border-color: #002366;
+  align-self: center;
+  border-radius: 8px;
+}
+
+.Scoring-sketch2 {
+  background-image: url("images/scoring-sketch3.png");
+  display: flex;
+  width: 58vw;
+  height: 44vw;
+  background-size: 58vw;
+  background-repeat: no-repeat;
+  border-style: solid;
+  border-width: 3px;
+  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.4);
+  border-color: #002366;
+  align-self: center;
+  border-radius: 8px;
+}
+
+.Scoring-sketch3 {
+  background-image: url("images/scoring-sketch4.png");
+  display: flex;
+  width: 58vw;
+  height: 22vw;
+  background-size: 58vw;
+  background-repeat: no-repeat;
+  border-style: solid;
+  border-width: 3px;
+  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.4);
+  border-color: #002366;
+  align-self: center;
+  border-radius: 8px;
+}
+
+.Scoring-sketch-page-counter {
+  width: 5rem;
+  font-size: 1.5rem;
+  color: black;
+  font-family: Alata;
+  background-color: #dbfb04;
+  border-width: 3px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 5px;
+  text-align: center;
+  align-self: center;
+  margin-top: 3vh;
+}
+
+.Scoring-lofi-container {
+  background-color: #505c00;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 70vw;
+  border-radius: 2vw;
+  align-self: center;
+  padding: 2vw;
+  margin-top: 3vh;
+}
+
+.Scoring-lofi-img {
+  display: flex;
+  width: 20vw;
+  height: 43vw;
+  background-size: 20vw;
+  background-repeat: no-repeat;
+  border-style: solid;
+  border-width: 3px;
+  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.4);
+  border-color: #002366;
+  align-self: center;
+  border-radius: 8px;
+}
+
+.Scoring-lofi1 {
+  background-image: url("images/scoring-home.png");
+}
+
+.Scoring-lofi2 {
+  background-image: url("images/scoring-discover.png");
+}
+
+.Scoring-lofi3 {
+  background-image: url("images/scoring-nft.png");
+}
+
+.Scoring-lofi4 {
+  background-image: url("images/scoring-learning.png");
+}
+
+.Scoring-lofi5 {
+  background-image: url("images/scoring-profile.png");
+}
+
+.Scoring-lofi6 {
+  background-image: url("images/scoring-wallet.png");
+}
+
+.Scoring-iframe-figma {
+  background-color: #222222;
+  align-self: center;
+  display: flex;
+  margin-top: 2vh;
+}
+
+.Scoring-usertest-img-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 84vw;
+  align-self: center;
+  margin-top: 3vh;
+}
+
+.Scoring-usertest-img {
+  display: flex;
+  width: 25vw;
+  height: 14vw;
+  background-size: 25vw;
+  background-repeat: no-repeat;
+  border-style: solid;
+  border-width: 3px;
+  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.4);
+  border-color: #000000;
+  align-self: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.Scoring-usertest-img:hover {
+  width: 27vw;
+  height: 15vw;
+  background-size: 27vw;
+  margin-top: -.5vw;
+}
+
+.usertest1 {
+  background-image: url("images/UserTest1.png");
+}
+
+.usertest2 {
+  background-image: url("images/UserTest2.png");
+}
+
+.usertest3 {
+  background-image: url("images/UserTest3.png");
+}
+
+.Pet-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fefefe;
+  min-width: 100vw;
+  min-height: 100vh;
+  padding-bottom: 5vh;
+}
+
+.Pet-header {
+  display: flex;
+  margin-left: 8vw;
+  margin-bottom: 0;
+  margin-top: 3vh;
+  display: flex;
+  flex-direction: column;
+  font-size: 3rem;
+  font-weight: 800;
+  padding: 1.8vw;
+  font-family: Alata;
+}
+
+.Pet-descriptionbox {
+  background-color: #f8f8f8;
+  width: 77vw;
+  align-self: center;
+  border-radius: 8px;
+  font-family: Alata;
+  color: black;
+  padding: 2vw;
+  font-size: 1.2rem;
+  margin-top: 0;
+  border-style: solid;
+  border-color: black;
+  border-width: 3.5px;
+  box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+}
+
+.Pet-notion-img {
+  display: flex;
+  width: 40vw;
+  height: 25vw;
+  border-radius: 5px;
+  box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.5);
+  margin-right: 1vw;
+  cursor: pointer;
+}
+
+.Pet-notion-img:hover {
+  box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.8);
+}
+
+.Pet-spotify-screen {
+  background-image: url("images/spotifyscreen.PNG");
+  display: flex;
+  width: 17vw;
+  height: 36vw;
+  background-size: 17vw;
+  border-radius: 5px;
+  box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+  margin-right: 1vw;
+}
+
+.Pet-spotify-screen:hover {
+  box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.8);
+}
+
+.Pet-sketch-header {
+  font-family: Alata;
+  display: flex;
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-left: 9vw;
+  margin-top: 4vh;
+}
+
+.Pet-sketch-design {
+  background-image: url("images/development\ sketch.png");
+  display: flex;
+  width: 80vw;
+  height: 45vw;
+  background-size: 80vw;
+  border-radius: 5px;
+  align-self: center;
+  box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+  margin-top: 2vh;
+  border-color: black;
+  border-style: solid;
+  border-width: 3px;
+}
+
+.Pet-sketch-implementation {
+  background-image: url("images/pet-sketch-impl.png");
+  display: flex;
+  width: 80vw;
+  height: 45vw;
+  background-size: 80vw;
+  border-radius: 5px;
+  align-self: center;
+  box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+  margin-top: 2vh;
+  border-color: black;
+  border-style: solid;
+  border-width: 3px;
+}
+
+.Pet-sample-card {
+  background-image: url("images/ponyo-card.png");
+  display: flex;
+  width: 25vw;
+  height: 37vw;
+  background-size: 25vw;
+  border-radius: 5px;
+  align-self: center;
+  margin-left: 2vw;
+}
+
+.Pet-link {
+  display: flex;
+  border-color: black;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 10px;
+  align-self: center;
+  font-size: 1.5rem;
+  font-family: Alata;
+  font-weight: 800;
+  background-color: white;
+  padding: 2vw;
+  width: 20rem;
+  justify-content: center;
+  box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+  margin-top: 5vh;
+}
+
+.Pet-link:hover {
+  background-color: lightpink;
+  box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.7);
+}
